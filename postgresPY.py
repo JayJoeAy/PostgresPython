@@ -11,7 +11,8 @@ try :
     cursor = connection.cursor()
     
     '''query syntaxes can be written in the 
-    format of a document string '''
+    format of a document string for using it
+    in multiline mode '''
     query = ''' select * from car '''
     cursor.execute(query)
     
