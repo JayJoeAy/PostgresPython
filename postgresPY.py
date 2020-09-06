@@ -33,7 +33,7 @@ try :
 except (Exception, psycopg2.Error) as error :
     print ("Error connecting", error)
 
-'''Connection to the database is terminated'''
+
 finally:
     if (connection):
         cursor.close()
