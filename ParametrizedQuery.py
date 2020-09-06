@@ -5,11 +5,13 @@ def getCarDetails(carID):
         connection = psycopg2.connect(user = "postgres",
         password = "3261848", host = "localhost",
         port = "5432", database = "erfandb")
-
+        
+        '''Here the parameter that is being sent is 
+        described as %s'''
         cursor = connection.cursor()
         query = "select * from car where id = %s"
-        
         cursor.execute(query, (carID,))
+        
         records = cursor.fetchall()
         for row in records:        
             print("id = ", row[0], )
@@ -25,7 +27,6 @@ def getCarDetails(carID):
             cursor.close()
             connection.close()
             print("Connection closed. \n")
-        
-    
+            
 getCarDetails(62)
 getCarDetails(3)
