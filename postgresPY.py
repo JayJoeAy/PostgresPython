@@ -6,14 +6,15 @@ try :
     port = "5432", database = "erfandb")
 
     cursor = connection.cursor()
-    query = ''' Create table mobile (
-        ID int primary key not null, 
-        model text not null,
-        price real
-    ); '''
+    query = ''' select * from car '''
     cursor.execute(query)
-    connection.commit()
-    print("table created successfully")
+    records = cursor.fetchall()
+    for row in records:
+        print("id = ", row[0], )
+        print("Manufacturer = ", row[1])
+        print("Model = ", row[2])
+        print("Price = ", row[3], "\n")
+        
 except (Exception, psycopg2.Error) as error :
     print ("Error connecting", error)
 
