@@ -3,7 +3,7 @@ import psycopg2
 def getCarDetails(carID):
     try:
         connection = psycopg2.connect(user = "postgres",
-        password = "3261848", host = "localhost",
+        password = "*****", host = "localhost",
         port = "5432", database = "erfandb")
         
         '''Here the parameter that is being sent is 

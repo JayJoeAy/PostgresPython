@@ -3,7 +3,7 @@ import psycopg2
 insert data in a table '''
 try:
     connection = psycopg2.connect(user = "postgres",
-        password = "3261848", host = "localhost",
+        password = "****", host = "localhost",
         port = "5432", database = "erfandb")
     
     cursor = connection.cursor()

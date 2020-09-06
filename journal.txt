@@ -1,1 +1,8 @@
-This is the first Entry in the journal. 
+This is the first Entry in the journal.
+16/06/1399-1:55
+at the end of this day some tutorials have been studied regarding connection
+of python and postgresQL module called psycopg2 and the results included 4
+files one for adding data to a table, one for reading data from a table, the
+third one for the application and usage of fetchmany and fetchall functions
+and the Parametrized file for passing data to queries sent to the postgresQL.
+/* 

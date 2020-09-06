@@ -4,7 +4,7 @@ try :
     ''' This section provides the informations 
     required for connecting to the database specified. '''
     connection = psycopg2.connect(user = "postgres",
-    password = "3261848", host = "localhost",
+    password = "*****", host = "localhost",
     port = "5432", database = "erfandb")
 
     ''' Cursors are used to execute query descriptions'''

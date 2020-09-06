@@ -2,7 +2,7 @@ import psycopg2
 
 try:
     connection = psycopg2.connect(user = "postgres",
-        password = "3261848", host = "localhost",
+        password = "*****", host = "localhost",
         port = "5432", database = "erfandb")
 
     print("Selecting rows from mobile table using cursor.fetchall")
